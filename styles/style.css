@@ -1,0 +1,359 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	padding:0;
+	margin:0;
+}
+
+body{
+	transition-duration: 2s;
+	overflow: visible;
+	margin: 0;
+}
+
+section{
+	position: relative;
+	overflow: hidden;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+li{
+	list-style: none;
+}
+
+img{
+	width: 100%;
+}
+
+video{
+	width: 100%;
+}
+
+.container{
+	width: 100%;
+	overflow: hidden;
+	position: fixed;
+	transition-duration: .25s;
+	transition-delay: 0s;
+	
+}
+
+
+#header{
+	width: 120px;
+	background-color: rgba(55,28,3,1.00);
+	position: fixed;
+	left: 150px;
+	top:-235px;
+	padding: 20px;
+	transition-duration: 1s;
+	font-family: "Alegreya sans";
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 30px;
+	color: rgba(52,33,6,1.00);
+	text-shadow: 0px 0px 10px rgba(77,49,9,1.00);
+	text-transform: uppercase;
+	z-index: 10;
+	background: url(../images/wood-textures-high-quality-1.jpg) repeat left top;
+	box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.5);
+}
+
+#header:target{
+	top:0;
+}
+
+#header:target .down{
+	display: none;
+}
+
+#header:target .up{
+	display: block;
+}
+
+#header .down{
+	display: block;
+}
+
+#header .up{
+	display: none;
+}
+
+#header>semi{
+	content: "";
+	position: absolute;
+	bottom: -100px;
+	z-index: -2;
+	left: 0%;
+	width: 100%;
+	height: 100px;
+	border-radius: 0 0 100px 100px;
+	background-color: rgba(55,28,3,1.00);
+	background: url(../images/wood-textures-high-quality-1.jpg) repeat left top;
+	box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.5);
+
+}
+
+#header>logo{
+	width: 70%;
+	margin: 0 auto;
+}
+
+#header>nav{
+	width: 70%;
+	margin: 0 auto;
+}
+
+#header>nav>li{
+	cursor: pointer;
+}
+
+#header>div{
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	bottom: -50px;
+}
+
+#header>div>a{
+	transform: rotate(0deg);
+	color: rgba(82,44,2,1.00);
+	font-size: 60px;
+	text-shadow: none;
+}
+
+#top_pane{
+	background: url(../images/Transparent-Glass-Texture2.png) left top no-repeat;
+	background-size: 100%;
+	box-shadow: 0 0 10px 10px rgba(0,0,0,0.3);
+	height: 150px;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 50px;
+	font-size: 60px;
+	text-align: right;
+	color: rgba(161,65,10,0.00);
+	text-shadow: 0 0 10px rgba(161,65,10,0.60);
+	position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+#top_pane>span{
+	font-family: 'Pangolin';
+}
+
+.parallax{
+	width: 100%;
+	overflow: hidden;
+	height: 650px;
+	position: relative;
+}
+
+.parallax>div{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	z-index: -2;
+	transition: .25s;
+	transition-delay: 0s;
+	transition-timing-function: linear;
+}
+
+.slider_screen{
+	height:300px;
+	width: 500px;
+	position: absolute;
+	left: calc(50% - 250px);
+	bottom: 0;
+	overflow: hidden;
+}
+
+.slider_film{
+	height: 300px;
+	transition-duration: 1s;
+}
+
+.slider_slide{
+	float: left;
+	width: 400px;
+	padding: 0 50px;
+}
+
+#leftArrow,#rightArrow{
+	position: absolute;
+	top: 45%;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	z-index: 10;
+	font-size: 30px;
+	color: rgba(26,255,0,0.34);
+}
+
+#leftArrow{
+	left: 0px;
+}
+
+#rightArrow{
+	right: 0px;
+}
+
+.something{
+	overflow: visible;
+}
+
+.something>img{
+	position: absolute;
+	top: -120px;
+	z-index: 5;
+}
+
+.content>article{
+	width: 50%;
+	position: relative;
+	box-sizing: border-box;
+	transition-duration: 1s;
+	padding: 90px;
+	font-family: "Alegreya sans";
+	font-size: 20px;
+	clear: none;
+}
+
+.content>.left-article,.content>.left-article2,.content>.left-article3{
+	float: left;
+}
+
+.content>.right-article,.content>.right-article2,.right-article3{
+	float: right;
+}
+
+.content>article>h1{
+	color: rgba(28,62,27,1.00);
+	text-align: center;
+	padding: 30px;
+}
+
+.content>article>p{
+	letter-spacing: 2px;
+	line-height: 30px;
+	color: rgba(95,184,93,1.00);
+
+}
+
+#else,#else2,#else3{
+	transition-duration: 2s;
+	overflow: visible;
+}
+
+#else>.img{
+	position: absolute;
+	top: -100px;
+	z-index: 1;
+}
+
+#else>aside{
+	position: absolute;
+	left: calc(-20% - 60px);
+	bottom: 0;
+	top: 0;
+	width: 20%;
+	color: rgba(255,255,255,0.35);
+	background-color: rgba(0,0,0,0.31);
+	font-size: 20px;
+	z-index: 1;
+	padding: 100px 30px 0;
+	transition-duration: 1.5s;
+}
+
+#else:hover>aside{
+	left:0;
+}
+
+#else>aside>h1{
+	margin: 20px;
+	font-family: 'Pangolin';
+	font-size: 32px;
+	letter-spacing: 2px;
+}
+
+#else>aside>ul>li{
+	line-height: 30px;
+	font-family: "Alegreya Sans";
+	font-size: 20px;
+}
+
+#else>div{
+	background: rgba(19,35,63,1.00) url(../images/Deathvalleysky_nps_big.jpg) no-repeat left top;
+	background-size: cover;
+}
+
+#snow{
+	height: 510px;
+	z-index: 0;
+	overflow: hidden;
+	transition-duration: 1s;
+}
+
+#snow>div{
+	position: absolute;
+	background-color: rgba(218,254,255,1.00);
+	border-radius: 20px;
+	height: 10px;
+	width: 10px;
+/*	outline: rgba(2,255,0,1.00) solid 5px;*/
+}
+
+#bubbles{
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	top:0;
+	height: 510px;
+	overflow: hidden;
+	transition-duration: 1s;
+}
+
+#score{
+	position: absolute;
+	z-index: 0;
+	line-height: 510px;
+	width: 100%;
+	text-align: center;
+	font-size: 250px;
+	color: rgba(1,0,97,0.3);
+	background: rgba(201,176,86,1.00) url(../images/ND83tmx.jpg) no-repeat left top;
+	background-size: cover;
+}
+
+bubble{
+	z-index: 0;
+	position: absolute;
+	width: 90px;
+	height: 90px;
+	background-color: rgba(0,171,255,0.31);
+	border-radius: 50px;
+	border: rgba(0,13,255,0.53) solid 1px;
+	font-family: 'Pangolin';
+}
+
+#non_blur,#blur{
+	background: rgba(116,132,11,1.00) url(../images/2ea217361850198da63840922224595e.jpg) no-repeat top left;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	cursor: none;
+}
+
+#blur{
+	filter: blur(3px);
+}
