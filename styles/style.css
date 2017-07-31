@@ -38,7 +38,7 @@ video{
 	width: 100%;
 	overflow: hidden;
 	position: fixed;
-	transition-duration: .25s;
+	transition-duration: .5s;
 	transition-delay: 0s;
 	
 }
@@ -161,7 +161,7 @@ video{
 	bottom: 0;
 	width: 100%;
 	z-index: -2;
-	transition: .25s;
+	transition: .5s;
 	transition-delay: 0s;
 	transition-timing-function: linear;
 }
